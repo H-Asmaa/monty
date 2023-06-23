@@ -65,4 +65,5 @@ void readLine(FILE *f, instruction_t *Dictionnary);
 int checkNumber();
 void Error(FILE *f, stack_t *top, int lineNumber, char *errorStr);
 void swapStack(stack_t **stack, unsigned int line_number);
+void addStack(stack_t **stack, unsigned int line_number);
 #endif

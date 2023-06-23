@@ -167,6 +167,7 @@ int main(int argc, char *argv[])
 			{"pint", pintStack},
 			{"pop", popStack},
 			{"swap", swapStack},
+			{"add", addStack},
 			{NULL, NULL}};
 	FILE *f;
 
