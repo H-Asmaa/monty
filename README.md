@@ -1,1 +1,1 @@
-This is readme for monty
+0x19. C - Stacks, Queues - LIFO, FIFO
