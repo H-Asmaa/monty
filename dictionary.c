@@ -80,3 +80,22 @@ void popStack(stack_t **stack, unsigned int line_number)
 	*stack = (*stack)->prev;
 	free(pop);
 }
+/**
+ * popStack - check the code
+ * @stack: first variable
+ * @line_number: Second variable
+ * Return: void.
+ */
+void swapStack(stack_t **stack, unsigned int line_number)
+{
+	int tmp;
+
+	if (*stack == NULL || (*stack)->prev == NULL)
+	{
+		fprintf(stderr, "L%u: can't swap, stack too short\n", line_number);
+		exit(EXIT_FAILURE);
+	}
+	tmp = (*stack)->n;
+	(*stack)->n = (*stack)->prev->n;
+	(*stack)->prev->n = tmp;
+}
