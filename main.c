@@ -170,6 +170,7 @@ int main(int argc, char *argv[])
 			{"add", addStack},
 			{"nop", nopStack},
 			{"sub", subStack},
+			{"div", divStack},
 			{NULL, NULL}};
 	FILE *f;
 
