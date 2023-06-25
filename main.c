@@ -183,7 +183,6 @@ int main(int argc, char *argv[])
 	if (f == NULL)
 	{
 		fprintf(stderr, "Error: Can't open file '%s': ", argv[1]);
-		perror("");
 		exit(EXIT_FAILURE);
 	}
 	readLine(f, Dictionnary);
